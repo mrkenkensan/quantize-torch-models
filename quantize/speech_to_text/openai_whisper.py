@@ -89,7 +89,7 @@ def main():
         device='cpu',
     )
     pipe.model = model_int8
-    audio_file = '/mnt/root/ProjectStorage/quantize-torch-models/quantized/speech-to-text/examples/[Aussie] 1MnxnpZVRjLGO.wav'
+    audio_file = '/root/ProjectStorage/quantize-torch-models/quantized/speech-to-text/examples/[Aussie] 1MnxnpZVRjLGO.wav'
     run_inference(audio_file=audio_file, pipe=pipe)
     # print(pipe(audio_file)['segments'])
     # print(pipe.model)
