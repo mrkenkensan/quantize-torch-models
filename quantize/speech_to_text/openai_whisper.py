@@ -6,6 +6,12 @@ import torch.jit
 import torch.nn as nn
 import os
 from transformers import pipeline
+import sys
+
+if __name__ == '__main__':
+    _BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    sys.path.insert(0, _BASE_DIR)
+
 
 from quantize import dynamic_quantize_model, save_model, load_model
 from quantize.speech_to_text import MODEL_DIR as _MODEL_DIR
