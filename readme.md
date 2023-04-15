@@ -9,6 +9,6 @@ pytorch 2.0
 ```
 conda create -n quantize-torch-models python==3.10
 conda activate quantize-torch-models
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
 pip install -r requirements.txt
 ```

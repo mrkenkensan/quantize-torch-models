@@ -11,6 +11,11 @@ _HOST_DIR_CONFIG = {
         {
             "PROJECT_DIR": "/mnt/Data/Projects",
             "PROJECT_STORAGE_DIR": "/mnt/Data/ProjectStorage"
+        },
+    "vultr":
+        {
+            "PROJECT_DIR": "/mnt/root/Projects",
+            "PROJECT_STORAGE_DIR": "/mnt/root/ProjectStorage"
         }
 }
 _HOST_DIRS = _HOST_DIR_CONFIG[_HOSTNAME]
